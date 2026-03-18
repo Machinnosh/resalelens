@@ -35,13 +35,13 @@ export default function ProfileTab() {
         <Text style={[styles.sectionTitle, isDark && { color: '#FFF' }]}>データについて</Text>
         <View style={[styles.infoBox, isDark && { backgroundColor: '#1F2937' }]}>
           <Text style={[styles.infoText, isDark && { color: '#D1D5DB' }]}>
-            リセールレンズは以下のソースから取得した実際の取引データに基づいて分析しています：
+            リセールレンズは、国内主要マーケットプレイスの実際の取引データに基づいて分析しています。
           </Text>
           <Text style={[styles.infoText, isDark && { color: '#D1D5DB' }]}>
-            {'\n'}• メルカリ（成約価格）{'\n'}• ヤフオク（落札価格）{'\n'}• ラクマ（成約価格）{'\n'}• コメ兵（販売価格）{'\n'}• 大黒屋（買取・販売価格）{'\n'}• ブランディア（買取価格）
+            {'\n'}• フリマアプリの成約価格{'\n'}• オークションの落札価格{'\n'}• 中古ブランドショップの販売・買取価格
           </Text>
           <Text style={[styles.infoText, isDark && { color: '#D1D5DB' }]}>
-            {'\n'}データは毎日自動更新され、LightGBM機械学習モデルで価格予測を行っています。
+            {'\n'}データは毎日自動更新され、独自の機械学習モデルで価格予測を行っています。
           </Text>
         </View>
       </View>

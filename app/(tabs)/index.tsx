@@ -37,7 +37,7 @@ export default function SearchTab() {
           ブランド品の{'\n'}「本当の値段」がわかる
         </Text>
         <Text style={styles.subtitle}>
-          メルカリ・ヤフオク等の実取引データをAIで分析
+          実際の取引データに基づくリセール価値分析
         </Text>
       </View>
 
@@ -99,7 +99,7 @@ export default function SearchTab() {
           <View style={[styles.infoCard, isDark && { backgroundColor: '#1F2937' }]}>
             <Text style={[styles.infoTitle, isDark && { color: '#FFF' }]}>リセールスコアとは？</Text>
             <Text style={[styles.infoText, isDark && { color: '#D1D5DB' }]}>
-              メルカリ・ヤフオク等の実際の取引データをAIが分析し、{'\n'}
+              実際の取引データを独自のアルゴリズムで分析し、{'\n'}
               ブランド品の「再販価値」を0〜100のスコアで表示します。{'\n'}
               スコアが高いほど、値落ちしにくいアイテムです。
             </Text>
