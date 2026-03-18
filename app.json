@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "resalelens",
+    "name": "リセールレンズ",
     "slug": "resalelens",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,9 +13,13 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "jp.resalelens.app",
+      "buildNumber": "1"
     },
     "android": {
+      "package": "jp.resalelens.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -34,6 +38,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
     }
   }
 }
