@@ -25,13 +25,17 @@ class YahooAuctionScraper(BaseScraper):
         items = []
         query = f"{brand} {model}"
 
-        # Yahoo Auctions completed items search
-        search_url = f"{self.BASE_URL}/closedsearch/closedsearch"
+        # Yahoo Auctions completed items search (updated URL structure)
+        search_url = f"{self.BASE_URL}/search/search"
         params = {
             "p": query,
             "va": query,
-            "auccat": self._get_category(item_type),
-            "n": 50,  # items per page
+            "is_postage_mode": "1",
+            "dest_pref_code": "13",
+            "exflg": "1",
+            "b": "1",
+            "n": "50",
+            "select": "sold",
         }
 
         response = await self._fetch(search_url, params=params)

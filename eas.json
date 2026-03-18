@@ -16,17 +16,5 @@
     "production": {
       "autoIncrement": true
     }
-  },
-  "submit": {
-    "production": {
-      "ios": {
-        "appleId": "atcgef@gmail.com",
-        "ascAppId": "",
-        "appleTeamId": ""
-      },
-      "android": {
-        "serviceAccountKeyPath": ""
-      }
-    }
   }
 }

@@ -15,7 +15,10 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "jp.resalelens.app",
-      "buildNumber": "1"
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "jp.resalelens.app",
@@ -41,8 +44,10 @@
     },
     "extra": {
       "eas": {
-        "projectId": ""
-      }
-    }
+        "projectId": "d259f719-3117-4c5e-bd36-513719e297bc"
+      },
+      "router": {}
+    },
+    "owner": "atcgef"
   }
 }
